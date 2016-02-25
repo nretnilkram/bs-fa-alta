@@ -1,0 +1,24 @@
+task :create_dirs do
+  system "mkdir -p dist/fonts"
+  system "mkdir -p dist/javascripts"
+  system "mkdir -p dist/stylesheets"
+end
+
+task :move_static_content do
+  system "cp -r assets/fonts/* dist/fonts/"
+  system "cp -r assets/javascripts/* dist/javascripts/"
+end
+
+task :setup => [:create_dirs, :move_static_content] do
+  puts "Setup Complete"
+end
+
+task :cleanup do 
+  system "rm -rf dist"
+end
+
+task :reset => [:cleanup, :setup]
+
+task :compile do
+  system "sass assets/stylesheets/_bootstrap.scss dist/stylesheets/bootstrap.css"
+end
