@@ -1,0 +1,117 @@
+//Switch - Pure CSS
+
+//Variables
+$switch-on-bg: #76b417;//#2fca6c;
+$switch-on-color: lighten(#76b417,20%);//#13ad4f;
+
+//Blue Gray
+$switch-off-bg: #919fab;
+$switch-off-color: lighten(#919fab,20%);//#c72f18;
+//Error
+$switch-off-bg: #c72f18;
+$switch-off-color: lighten(#c72f18,20%);
+
+//Light Gray
+$switch-off-bg: #ccc;
+$switch-off-color: lighten(#ccc,15%);
+
+$switch-height: 34px;
+$switch-font-size: 18px;
+$switch-width:80px;
+
+
+/* Checkbox hack */
+.switch input {
+  cursor: pointer;
+  height: 100%;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+}
+
+/* Container */
+.switch {
+  height: $switch-height;
+  position: relative;
+  width: $switch-width;
+
+}
+
+/* Background unchecked */
+.switch label {
+  background: $switch-off-bg;
+  color: $switch-off-color;
+  border-radius: 3px;
+  display: block;
+  height: 100%;
+  position: relative;
+  transition: all .15s ease;
+  width: 100%;
+}
+
+/* Slider unchecked */
+.switch label div {
+  background: #fff;
+  border-radius: 2px;
+  display: block;
+  height: $switch-height - 8;
+  left: 4px;
+  position: absolute;
+  top: 4px;
+  transition: all .15s ease;
+  width: 36px;
+  z-index: 3; 
+  // // Match btn-default
+  // background-image: linear-gradient(#ffffff, #f1f3f4 4%, #e4e8ea);
+}
+
+/* Vertical lines on slider */
+.switch label div:before {
+  background: #d3d3d3;
+  bottom: 0;
+  box-shadow: -6px 0 0 0 #d3d3d3,
+        6px 0 0 0 #d3d3d3; 
+  content: '';
+  display: block;
+  height: 15px;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: all .15s ease;
+  width: 3px;
+  // // match btn-default
+  // background: #515253;
+  // box-shadow: -6px 0 0 0 #515253,
+  //       6px 0 0 0 #515253; 
+}
+
+/* Icon styles */
+.switch .fa-ok, .switch .fa-check {
+  font-size: $switch-font-size;
+  left: 12px;
+  position: relative;
+  top: 8px;
+  z-index: 2;
+}
+
+
+.switch .fa-remove {
+  font-size: $switch-font-size;
+  left: 31px;
+  position: relative;
+  top: 8px;
+  z-index: 2;
+}
+
+/* Checked States */
+.switch input:checked~label {
+  background: $switch-on-bg;
+  color: $switch-on-color;
+}
+
+.switch input:checked~label div {
+  left: 40px;
+}
