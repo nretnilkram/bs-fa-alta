@@ -1,19 +1,11 @@
 //Switch - Pure CSS
 
 //Variables
-$switch-on-bg: #76b417;//#2fca6c;
-$switch-on-color: lighten(#76b417,20%);//#13ad4f;
+$switch-on-bg: $brand-success;
+$switch-on-color: lighten($brand-success,20%);
 
-//Blue Gray
-$switch-off-bg: #919fab;
-$switch-off-color: lighten(#919fab,20%);//#c72f18;
-//Error
-$switch-off-bg: #c72f18;
-$switch-off-color: lighten(#c72f18,20%);
-
-//Light Gray
-$switch-off-bg: #ccc;
-$switch-off-color: lighten(#ccc,15%);
+$switch-off-bg: $brand-danger;
+$switch-off-color: lighten($brand-danger,15%);
 
 $switch-height: 34px;
 $switch-font-size: 18px;
@@ -62,8 +54,6 @@ $switch-width:80px;
   transition: all .15s ease;
   width: 36px;
   z-index: 3; 
-  // // Match btn-default
-  // background-image: linear-gradient(#ffffff, #f1f3f4 4%, #e4e8ea);
 }
 
 /* Vertical lines on slider */
@@ -82,10 +72,6 @@ $switch-width:80px;
   top: 0;
   transition: all .15s ease;
   width: 3px;
-  // // match btn-default
-  // background: #515253;
-  // box-shadow: -6px 0 0 0 #515253,
-  //       6px 0 0 0 #515253; 
 }
 
 /* Icon styles */
@@ -96,7 +82,6 @@ $switch-width:80px;
   top: 8px;
   z-index: 2;
 }
-
 
 .switch .fa-remove {
   font-size: $switch-font-size;
