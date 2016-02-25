@@ -45,7 +45,7 @@
 .visible-lg-block,
 .visible-lg-inline,
 .visible-lg-inline-block {
-  display: none !important;
+  display: none;
 }
 
 @media (max-width: $screen-xs-max) {
@@ -53,17 +53,17 @@
 }
 .visible-xs-block {
   @media (max-width: $screen-xs-max) {
-    display: block !important;
+    display: block;
   }
 }
 .visible-xs-inline {
   @media (max-width: $screen-xs-max) {
-    display: inline !important;
+    display: inline;
   }
 }
 .visible-xs-inline-block {
   @media (max-width: $screen-xs-max) {
-    display: inline-block !important;
+    display: inline-block;
   }
 }
 
@@ -72,17 +72,17 @@
 }
 .visible-sm-block {
   @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-    display: block !important;
+    display: block;
   }
 }
 .visible-sm-inline {
   @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-    display: inline !important;
+    display: inline;
   }
 }
 .visible-sm-inline-block {
   @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-    display: inline-block !important;
+    display: inline-block;
   }
 }
 
@@ -91,17 +91,17 @@
 }
 .visible-md-block {
   @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-    display: block !important;
+    display: block;
   }
 }
 .visible-md-inline {
   @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-    display: inline !important;
+    display: inline;
   }
 }
 .visible-md-inline-block {
   @media (min-width: $screen-md-min) and (max-width: $screen-md-max) {
-    display: inline-block !important;
+    display: inline-block;
   }
 }
 
@@ -110,17 +110,17 @@
 }
 .visible-lg-block {
   @media (min-width: $screen-lg-min) {
-    display: block !important;
+    display: block;
   }
 }
 .visible-lg-inline {
   @media (min-width: $screen-lg-min) {
-    display: inline !important;
+    display: inline;
   }
 }
 .visible-lg-inline-block {
   @media (min-width: $screen-lg-min) {
-    display: inline-block !important;
+    display: inline-block;
   }
 }
 
@@ -153,24 +153,24 @@
   @include responsive-visibility('.visible-print');
 }
 .visible-print-block {
-  display: none !important;
+  display: none;
 
   @media print {
-    display: block !important;
+    display: block;
   }
 }
 .visible-print-inline {
-  display: none !important;
+  display: none;
 
   @media print {
-    display: inline !important;
+    display: inline;
   }
 }
 .visible-print-inline-block {
-  display: none !important;
+  display: none;
 
   @media print {
-    display: inline-block !important;
+    display: inline-block;
   }
 }
 

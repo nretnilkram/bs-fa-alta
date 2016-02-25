@@ -21,4 +21,5 @@ task :reset => [:cleanup, :setup]
 
 task :compile do
   system "sass assets/stylesheets/_bootstrap.scss dist/stylesheets/bootstrap.css"
+  system "sass assets/stylesheets/_bootstrap.scss dist/stylesheets/bootstrap.min.css --style compressed"
 end
