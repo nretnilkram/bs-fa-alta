@@ -4,7 +4,7 @@ $tabCount: 7;
 .nav.css-tabs.nav-tabs {
 
   input[type="radio"].css-tab {
-    display: none !important;
+    display: none;
 
     &:checked {
       + label {
