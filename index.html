@@ -15,52 +15,59 @@
 	</style>
 </head>
 <body>
-	<div class="container">
 
-		<div id="alta-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
-			<div class="navbar-header">
-				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-expanded="false" aria-controls="navbar">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-				<a class="navbar-brand" href="/"></a>
-			</div>
-			<div class="collapse navbar-collapse navbar-ex1-collapse">
-				<ul class="nav navbar-nav">
-					<li class="menu-item "><a href="#"><i class="fa fa-clone"></i> Link One</a></li>
-					<li class="menu-item "><a href="#"><i class="fa fa-random"></i> Link Two</a></li>
-					<li class="menu-item "><a href="#"><i class="fa fa-plus-square"></i> Link Three</a></li>
-				</ul>
-				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#" data-toggle="modal" data-target="#dict"><span class="fa fa-book"></span> <span class="hidden-sm hidden-md hidden-lg">Documentation</span></a></li>
-					<li><a href="#" data-toggle="modal" data-target="#help"><span class="fa fa-question-circle"></span> <span class="hidden-sm hidden-md hidden-lg">Help</span></a></li>
-				</ul>
-			</div>
+	<div id="alta-navbar" class="navbar navbar-default navbar-fixed-top" role="navigation">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-ex1-collapse" aria-expanded="false" aria-controls="navbar">
+				<span class="sr-only">Toggle navigation</span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="/"></a>
 		</div>
-
-		<div style="height: 70px;"></div>
-
-		<h1>Hello <i class="fa fa-hand-paper-o fa-flip-horizontal"></i> World <i class="fa fa-globe"></i></h1>
-
-		<div>
-			<button class="btn btn-default">Default</button>
-			<button class="btn btn-success">Success</button>
-			<button class="btn btn-info">Info</button>
-			<button class="btn btn-warning">Warning</button>
-			<button class="btn btn-danger">Danger</button>
+		<div class="collapse navbar-collapse navbar-ex1-collapse">
+			<ul class="nav navbar-nav">
+				<li class="menu-item "><a href="#"><i class="fa fa-clone"></i> Link One</a></li>
+				<li class="menu-item "><a href="#"><i class="fa fa-random"></i> Link Two</a></li>
+				<li class="menu-item "><a href="#"><i class="fa fa-plus-square"></i> Link Three</a></li>
+			</ul>
+			<ul class="nav navbar-nav navbar-right">
+				<li><a href="#" data-toggle="modal" data-target="#dict"><span class="fa fa-book"></span> <span class="hidden-sm hidden-md hidden-lg">Documentation</span></a></li>
+				<li><a href="#" data-toggle="modal" data-target="#help"><span class="fa fa-question-circle"></span> <span class="hidden-sm hidden-md hidden-lg">Help</span></a></li>
+			</ul>
 		</div>
-
-		<div style="height: 70px;"></div>
-
-		<footer>
-			<div class="footer-wrapper container">
-				<p class="copyright text-center">Copyright © 2016 Network Apps</p>
-			</div>
-		</footer>
-
 	</div>
+
+	<div style="height: 50px;"></div>
+
+	<div class="stage">
+		<div class="container">
+			<div class="stage-heading">
+				<div class="stage-title">Hello <i class="fa fa-hand-paper-o fa-flip-horizontal"></i> World <i class="fa fa-globe"></i></div>
+				<div class="stage-subtitle">Description text.</div>
+			</div>
+		</div>
+	</div>
+
+	<div style="height: 50px;"></div>
+
+	<div style="text-align: center;">
+		<button class="btn btn-default">Default</button>
+		<button class="btn btn-success">Success</button>
+		<button class="btn btn-info">Info</button>
+		<button class="btn btn-warning">Warning</button>
+		<button class="btn btn-danger">Danger</button>
+	</div>
+
+	<div style="height: 50px;"></div>
+
+	<footer>
+		<div class="footer-wrapper container">
+			<p class="copyright text-center">Copyright © 2016 Network Apps</p>
+		</div>
+	</footer>
+
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
