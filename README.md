@@ -4,10 +4,22 @@
 gem install sass
 ```
 
-### Make Diretectories
+### Make Directories
 
 ```
-rake setup
+rake sass:setup
+```
+
+### Delete dist Directories
+
+```
+rake sass:cleanup
+```
+
+### Delete and Create dist Directories
+
+```
+rake sass:reset
 ```
 
 ### Complie Sass
@@ -16,7 +28,7 @@ rake setup
 sass assets/stylesheets/_bootstrap.scss dist/stylesheets/bootstrap.css
 sass assets/stylesheets/_bootstrap.scss dist/stylesheets/bootstrap.min.css --style compressed
 ```
-or 
+or
 ```
-rake compile
+rake sass:compile
 ```
