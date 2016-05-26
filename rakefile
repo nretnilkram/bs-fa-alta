@@ -29,4 +29,8 @@ namespace :sass do
     system 'sass assets/stylesheets/_full.scss dist/stylesheets/bootstrap-fa-alta.css'
     system 'sass assets/stylesheets/_full.scss dist/stylesheets/bootstrap-fa-alta.min.css --style compressed'
   end
+
+  task :watch do
+    system 'sass --watch assets/stylesheets/_full.scss:dist/stylesheets/bootstrap-fa-alta.min.css --style compressed'
+  end
 end

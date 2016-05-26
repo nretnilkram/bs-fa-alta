@@ -20,25 +20,27 @@
 
   .navbar-brand {
     //default
-    background: transparent url('/images/oracle_logo_sm.png') no-repeat;
+    background: transparent url('../images/oracle_logo_sm.png') no-repeat;
     background-position: 0 45%;
     position: relative;
-    min-width: 250px;
+    min-width: 225px;
     top: 0;
     bottom: 0;
-    margin:  0 50px 0 10px;
+    margin: 0 15px;
+    padding: 15px 0;
+
 
     &.small {
-      background: transparent url('/images/oracle_logo_sm.png') no-repeat 0 0;
+      background: transparent url('../images/oracle_logo_sm.png') no-repeat 0 0;
       width: 135px;
     }
 
     &::after {
-      width: 65%;
-      right: -20%;
+      width: 85px;
+      right: 0;
       top: 30%;
       position: absolute;
-      content: 'OCM Network Apps';
+      content: 'OCM App';
       color: $text-color;
     }
   }

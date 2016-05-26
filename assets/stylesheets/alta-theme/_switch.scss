@@ -11,7 +11,6 @@ $switch-height: 34px;
 $switch-font-size: 18px;
 $switch-width:80px;
 
-
 /* Checkbox hack */
 .switch input {
   cursor: pointer;
@@ -53,7 +52,7 @@ $switch-width:80px;
   top: 4px;
   transition: all .15s ease;
   width: 36px;
-  z-index: 3; 
+  z-index: 3;
 }
 
 /* Vertical lines on slider */
@@ -61,7 +60,7 @@ $switch-width:80px;
   background: #d3d3d3;
   bottom: 0;
   box-shadow: -6px 0 0 0 #d3d3d3,
-        6px 0 0 0 #d3d3d3; 
+        6px 0 0 0 #d3d3d3;
   content: '';
   display: block;
   height: 15px;
