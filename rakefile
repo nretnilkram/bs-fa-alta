@@ -26,7 +26,7 @@ namespace :sass do
   task reset: [:cleanup, :setup]
 
   task :compile do
-    system 'sass assets/stylesheets/_full.scss dist/stylesheets/bootstrap-alta.css'
-    system 'sass assets/stylesheets/_full.scss dist/stylesheets/bootstrap-alta.min.css --style compressed'
+    system 'sass assets/stylesheets/_full.scss dist/stylesheets/bootstrap-fa-alta.css'
+    system 'sass assets/stylesheets/_full.scss dist/stylesheets/bootstrap-fa-alta.min.css --style compressed'
   end
 end

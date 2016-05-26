@@ -25,8 +25,8 @@ rake sass:reset
 ### Complie Sass
 
 ```
-sass assets/stylesheets/_bootstrap.scss dist/stylesheets/bootstrap.css
-sass assets/stylesheets/_bootstrap.scss dist/stylesheets/bootstrap.min.css --style compressed
+sass assets/stylesheets/_bootstrap.scss dist/stylesheets/bootstrap-fa-alta.css
+sass assets/stylesheets/_bootstrap.scss dist/stylesheets/bootstrap-fa-alta.min.css --style compressed
 ```
 or
 ```
