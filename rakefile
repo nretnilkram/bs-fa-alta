@@ -1,27 +1,32 @@
-task :create_dirs do
-  system "mkdir -p dist/fonts"
-  system "mkdir -p dist/images"
-  system "mkdir -p dist/javascripts"
-  system "mkdir -p dist/stylesheets"
-end
+# encoding: utf-8
+# frozen_string_literal: true
 
-task :move_static_content do
-  system "cp -r assets/fonts/* dist/fonts/"
-  system "cp -r assets/images/* dist/images/"
-  system "cp -r assets/javascripts/* dist/javascripts/"
-end
+namespace :sass do
+  task :create_dirs do
+    system 'mkdir -p dist/fonts'
+    system 'mkdir -p dist/images'
+    system 'mkdir -p dist/javascripts'
+    system 'mkdir -p dist/stylesheets'
+  end
 
-task :setup => [:create_dirs, :move_static_content] do
-  puts "Setup Complete"
-end
+  task :move_static_content do
+    system 'cp -r assets/fonts/* dist/fonts/'
+    system 'cp -r assets/images/* dist/images/'
+    system 'cp -r assets/javascripts/* dist/javascripts/'
+  end
 
-task :cleanup do 
-  system "rm -rf dist"
-end
+  task setup: [:create_dirs, :move_static_content] do
+    puts 'Setup Complete'
+  end
 
-task :reset => [:cleanup, :setup]
+  task :cleanup do
+    system 'rm -rf dist'
+  end
 
-task :compile do
-  system "sass assets/stylesheets/_full.scss dist/stylesheets/bootstrap-alta.css"
-  system "sass assets/stylesheets/_full.scss dist/stylesheets/bootstrap-alta.min.css --style compressed"
+  task reset: [:cleanup, :setup]
+
+  task :compile do
+    system 'sass assets/stylesheets/_full.scss dist/stylesheets/bootstrap-alta.css'
+    system 'sass assets/stylesheets/_full.scss dist/stylesheets/bootstrap-alta.min.css --style compressed'
+  end
 end
