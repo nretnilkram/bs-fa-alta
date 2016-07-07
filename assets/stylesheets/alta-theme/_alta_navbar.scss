@@ -1,5 +1,6 @@
 #alta-navbar {
   margin-bottom: 0;
+  background-color: #fff;
 
   .container-fluid {
     padding-right: 0;
@@ -7,11 +8,12 @@
   }
 
   .navbar-collapse {
-    background-color: $grey-3;
+    background-color: #fff;
     margin-top: 0;
     box-shadow: 0 3px 4px rgba(0,0,0,0.15);
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
+    max-height: 100%;
   }
 
   .navbar-header {
@@ -26,9 +28,8 @@
     min-width: 225px;
     top: 0;
     bottom: 0;
-    margin: 0 15px;
+    margin: 0 10px;
     padding: 15px 0;
-
 
     &.small {
       background: transparent url('../images/oracle_logo_sm.png') no-repeat 0 0;
@@ -50,11 +51,69 @@
 
     .navbar-nav {
       margin: 7.5px -10px;
+
       @media (min-width: $grid-float-breakpoint-max) {
         margin: 0;
       }
 
+      @media (max-width: $screen-xs-max) {
+        margin-top: 0;
+        margin-bottom: 0;
+      }
+
+      > li {
+        @media (min-width: $screen-sm-min) {
+
+          > a {
+            margin-top: 10px;
+          }
+
+          a {
+            padding: 5px 15px;
+            color: #333;
+            &:hover,
+            &:focus {
+              color: $navbar-default-link-active-color;
+             background-color: #fff;
+            }
+          }
+        }
+
+        @media (max-width: $screen-xs-max) {
+          border-bottom: 2px solid $grey-3;
+        }
+
+        &.open {
+          @media (max-width: $screen-xs-max) {
+            > .dropdown-menu {
+              border-top: 5px solid $grey-5;
+              border-bottom: 5px solid $grey-5;
+            }
+          }
+        }
+
+        &:last-child {
+          @media (max-width: $screen-xs-max) {
+            border-bottom: none;
+          }
+        }
+      }
+
+      li {
+        @media (max-width: $screen-xs-max) {
+          text-align: center;
+        }
+
+        .dropdown-menu {
+          .divider {
+            margin: 0;
+          }
+        }
+      }
+
       > .active > a {
+        color: $navbar-default-link-active-color;
+
         &,
         &:hover,
         &:focus {
@@ -63,7 +122,33 @@
             box-shadow: inset 4px 0px $navbar-default-link-active-color;
           }
         }
-  }
-}
+      }
+
+      &.main-nav {
+        > li {
+          @media (min-width: $screen-sm-min) {
+            > a {
+              border-top: solid 1px $grey-3;
+              border-right: solid 1px $grey-3;
+              border-bottom: solid 1px $grey-3;
+            }
+
+            &:first-child > a {
+              border-left: solid 1px $grey-3;
+            }
+          }
+        }
+      }
+
+      &.secondary-nav {
+        > li {
+          @media (min-width: $screen-sm-min) {
+            > a.large {
+              margin-top: 5px;
+            }
+          }
+        }
+      }
+    }
   }
 }
