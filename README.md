@@ -1,4 +1,9 @@
-## Install Sass
+## BS-FA-ALTA
+
+Bootstrap: 3.3.6
+FontAwesome: 4.6.3
+
+### Install Sass
 
 ```
 gem install sass

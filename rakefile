@@ -1,6 +1,8 @@
 # encoding: utf-8
 # frozen_string_literal: true
 
+require 'fileutils'
+
 namespace :sass do
   task :create_dirs do
     system 'mkdir -p dist/fonts'
@@ -10,9 +12,9 @@ namespace :sass do
   end
 
   task :move_static_content do
-    system 'cp -r assets/fonts/* dist/fonts/'
-    system 'cp -r assets/images/* dist/images/'
-    system 'cp -r assets/javascripts/* dist/javascripts/'
+    FileUtils.copy_entry 'assets/fonts', 'dist/fonts/'
+    FileUtils.copy_entry 'assets/images', 'dist/images/'
+    FileUtils.copy_entry 'assets/javascripts', 'dist/javascripts/'
   end
 
   task setup: [:create_dirs, :move_static_content] do
