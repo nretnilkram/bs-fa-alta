@@ -1,5 +1,9 @@
 @import "alta-theme/colors";
 
+/* Padding between columns. Gets divided in half for the left and right. 
+   This will override the bootstrap default of 30 */
+$grid-gutter-width:         32px !default;
+
 $brand-primary:         $ui-blue;
 $brand-success:         $ui-green;
 $brand-info:            $ui-teal;

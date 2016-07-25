@@ -74,12 +74,42 @@
 
 	<div style="height: 50px;"></div>
 
-	<div style="text-align: center;">
-		<button class="btn btn-default">Default</button>
-		<button class="btn btn-success">Success</button>
-		<button class="btn btn-info">Info</button>
-		<button class="btn btn-warning">Warning</button>
-		<button class="btn btn-danger">Danger</button>
+	<div class="container">
+		<div class="panel text-center p-lg">
+			<button class="btn btn-default">Default</button>
+			<button class="btn btn-success">Success</button>
+			<button class="btn btn-info">Info</button>
+			<button class="btn btn-warning">Warning</button>
+			<button class="btn btn-danger">Danger</button>
+		</div>
+	</div>
+
+	<div style="height: 30px;"></div>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-6 p-lg">
+				<div class="row display-options">
+					<div class="col-xs-6 col-sm-4 col-md-3">
+						<img class="display-img pointer" src="dist/images/A.jpg">
+					</div>
+					<div class="col-xs-6 col-sm-4 col-md-3">
+						<img class="display-img pointer" src="dist/images/B.jpg">
+					</div>
+					<div class="visible-xs clearfix" style="height: 30px;"></div>
+					<div class="col-xs-6 col-sm-4 col-md-3">
+						<img class="display-img pointer" src="dist/images/C.jpg">
+					</div>
+					<div class="visible-sm clearfix" style="height: 30px;"></div>
+					<div class="col-xs-6 col-sm-4 col-md-3">
+						<img class="display-img pointer" src="dist/images/D.jpg">
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-6 p-lg panel display">
+				<img src="dist/images/A.jpg">
+			</div>
+		</div>
 	</div>
 
 	<div style="height: 50px;"></div>
@@ -120,9 +150,16 @@
 
 
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script type="text/javascript" src="dist/javascripts/jquery-2.2.4.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
-	<script src="dist/javascripts/bootstrap.min.js"></script>
+	<script type="text/javascript" src="dist/javascripts/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$('.display-img').click(function(){
+			var src = $(this).attr('src');
+			var img = $('<img>').attr('src', src);
+			$('.display').html(img);
+		});
+	</script>
 
 </body>
 </html>
