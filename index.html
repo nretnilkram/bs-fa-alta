@@ -84,11 +84,27 @@
 		</div>
 	</div>
 
-		<div class="container">
-			<div class="panel text-center p-lg">
-				<a href="#" class="p-lg"><span class="glyphicon glyphicon-star"></span> Star <span class="glyphicon glyphicon-star"></span></a>
+	<div class="container">
+		<div class="panel text-center p-lg">
+			<a href="#" class="p-lg"><span class="glyphicon glyphicon-star"></span> Star <span class="glyphicon glyphicon-star"></span></a>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="panel text-center p-lg">
+			<div class="checkbox-switch single-switch">
+				<div class="switch">
+					<input type="checkbox" name="remember_me"/>
+					<label>
+						<i class="fa fa-check"></i>
+						<i class="fa fa-remove"></i>
+						<div class="switch-handle"></div>
+					</label>
+				</div>
+				<label class="switch-label" style="top: 7px;position: relative;">Flip? <i class="fa fa-question-circle" data-toggle="tooltip" data-placement="right" title="Help bubble."></i></label>
 			</div>
 		</div>
+	</div>
 
 	<div style="height: 30px;"></div>
 
@@ -164,6 +180,9 @@
 			var src = $(this).attr('src');
 			var img = $('<img>').attr('src', src);
 			$('.display').html(img);
+		});
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip();
 		});
 	</script>
 
