@@ -16,9 +16,13 @@ $link-color:            #145c9e !default;
 
 $icon-font-path: "../fonts/bootstrap/" !default;
 
-$border-radius-base:        3px !default;
-$border-radius-large:       4px !default;
-$border-radius-small:       2px !default;
+$border-radius:          0 !default;
+$border-radius-lg:       0 !default;
+$border-radius-sm:       0!default;
+
+$border-radius-base:        0 !default;
+$border-radius-large:       0 !default;
+$border-radius-small:       0 !default;
 
 $table-cell-padding:            12px !default;
 $table-condensed-cell-padding:  4px !default;
@@ -35,7 +39,8 @@ $screen-md:                  960px !default;
 $screen-lg:                  1366px !default;
 $navbar-margin-bottom:             0 !default;
 
-$navbar-default-bg:                $grey-3 !default;
+$navbar-height:                            50px !default;
+$navbar-default-bg:                        $grey-3 !default;
 $navbar-default-link-color:                #333333 !default;
 $navbar-default-link-hover-color:          $brand-primary !default;
 $navbar-default-link-hover-bg:             $grey-blue-lightest !default;

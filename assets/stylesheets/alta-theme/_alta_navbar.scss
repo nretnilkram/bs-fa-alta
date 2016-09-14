@@ -52,17 +52,17 @@
     .navbar-nav {
       margin: 7.5px -10px;
 
-      @media (min-width: $grid-float-breakpoint-max) {
+      @media (min-width: sm-1) {
         margin: 0;
       }
 
-      @media (max-width: $screen-xs-max) {
+      @media (max-width: xs) {
         margin-top: 0;
         margin-bottom: 0;
       }
 
       > li {
-        @media (min-width: $screen-sm-min) {
+        @media (min-width: sm) {
 
           > a {
             margin-top: 10px;
@@ -79,12 +79,12 @@
           }
         }
 
-        @media (max-width: $screen-xs-max) {
+        @media (max-width: xs) {
           border-bottom: 2px solid $grey-3;
         }
 
         &.open {
-          @media (max-width: $screen-xs-max) {
+          @media (max-width: xs) {
             > .dropdown-menu {
               border-top: 5px solid $grey-5;
               border-bottom: 5px solid $grey-5;
@@ -93,14 +93,14 @@
         }
 
         &:last-child {
-          @media (max-width: $screen-xs-max) {
+          @media (max-width: xs) {
             border-bottom: none;
           }
         }
       }
 
       li {
-        @media (max-width: $screen-xs-max) {
+        @media (max-width: xs) {
           text-align: center;
         }
 
@@ -118,7 +118,7 @@
         &:hover,
         &:focus {
           box-shadow: inset 0px -4px $navbar-default-link-active-color;
-          @media (max-width: $grid-float-breakpoint-max) {
+          @media (max-width: sm-1) {
             box-shadow: inset 4px 0px $navbar-default-link-active-color;
           }
         }
@@ -126,7 +126,7 @@
 
       &.main-nav {
         > li {
-          @media (min-width: $screen-sm-min) {
+          @media (min-width: sm) {
             > a {
               border-top: solid 1px $grey-3;
               border-right: solid 1px $grey-3;
@@ -142,7 +142,7 @@
 
       &.secondary-nav {
         > li {
-          @media (min-width: $screen-sm-min) {
+          @media (min-width: sm) {
             > a.large {
               margin-top: 5px;
             }
