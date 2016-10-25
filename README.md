@@ -1,7 +1,7 @@
 ## BS-FA-ALTA
 
 * Bootstrap: 3.3.7
-* FontAwesome: 4.6.3
+* FontAwesome: 4.7.0
 
 ### Install Sass
 
