@@ -1,6 +1,6 @@
 // This also gets imported in _full.scss as the first setting declaration wins.
-@import "square/variables";
+@import "variables";
 
 // Bootstrap Overrides
-@import "square/label";
-@import "square/switch";
+@import "label";
+@import "switch";

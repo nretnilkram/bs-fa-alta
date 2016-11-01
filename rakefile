@@ -22,14 +22,17 @@ namespace :sass do
   end
 
   task :cleanup do
-    system 'rm -rf dist'
+    FileUtils.remove_dir 'dist' if Dir.exists? 'dist'
   end
 
   task reset: [:cleanup, :setup]
 
   task :compile do
-    system 'sass assets/stylesheets/_full.scss dist/stylesheets/bootstrap-fa-alta.css'
     system 'sass assets/stylesheets/_full.scss dist/stylesheets/bootstrap-fa-alta.min.css --style compressed'
+  end
+
+  task :compile_full do
+    system 'sass assets/stylesheets/_full.scss dist/stylesheets/bootstrap-fa-alta.css'
   end
 
   task :watch do

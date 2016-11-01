@@ -2,17 +2,17 @@
 @import "square/variables";
 
 // Updated Variables for Alta Theme
-@import "alta_bootstrap_variables";
+@import "alta-theme/variables";
 
 // Font Awesome CSS
 $fa-font-path: "../fonts/font-awesome" !default;
-@import "font-awesome";
+@import "font-awesome/font-awesome";
 
 // Bootstrap CSS with Ala Styles
-@import "bootstrap";
+@import "bootstrap/bootstrap";
 
 // Alta Theme
-@import "alta_theme";
+@import "alta-theme/alta_theme";
 
 // Square Override
-@import "square";
+@import "square/square";

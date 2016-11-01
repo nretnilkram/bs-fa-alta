@@ -1,0 +1,20 @@
+// Alta Theme Variables
+@import "variables";
+
+// Alta Theme Components
+@import "avatars";
+@import "css_tabs";
+@import "drawer";
+@import "metric";
+@import "stage";
+@import "switch";
+@import "timeline";
+
+// Alta Theme Utility Classes
+@import "utilities";
+@import "helpers";
+
+// Alta Theme Overrides
+@import "alta_basics";
+@import "alta_navbar";
+@import "alta_alerts";
